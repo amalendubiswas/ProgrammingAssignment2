@@ -10,19 +10,19 @@ makeCacheMatrix <- function(x = matrix()) {
         ## Create inverseMatrix as an empty or NULL matrix.
         inverseMatrix <- NULL
         
-        ## Set the value of the matrix
+        ## Set the value of the matrix.
         set <- function(y) {
                 x <<- y
                 inverseMatrix <<- NULL
         }
         
-        ## Get the value of the matrix
+        ## Get the value of the matrix.
         get <- function() x
         
-        ## Set the value of the inverse matrix
+        ## Set the value of the inverse matrix.
         setinverse <- function(solve) inverseMatrix <<- solve
         
-        ## Get the value of the inverse matrix
+        ## Get the value of the inverse matrix.
         getinverse <- function() inverseMatrix
         
         ## Return the four children functions as a callable list of functions.
